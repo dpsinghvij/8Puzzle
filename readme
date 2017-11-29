@@ -1,0 +1,46 @@
+How to Run Program:-
+For linux/unix/OsX based system run
+sh assign2.sh
+For windows based system double click on assign2.bat
+I have also include jar file with the project
+You can run using command
+java -jar AIAssignment2.jar
+
+Compilation and Execution
+I have created this project using java, To view code you can use Intellij to load the project.
+This program has been tested for following matrix
+1.)
+1 3 4
+8 0 2
+7 6 5
+Input (1,3,4,8,0,2,7,6,5)
+DFS depth -5
+
+2.)
+2 8 3
+1 6 4
+7 0 5
+Input (2,8,3,1,6,4,7,0,5)
+DFS depth -6
+
+3.)
+1 2 3
+8 4 0
+7 6 5
+Input (1,2,3,8,4,0,7,6,5)
+DFS depth - 30
+
+Details:
+This program implements 8-puzzle solver. It uses 3 techniques
+1. BFS (BFSAlgorithm.java)
+2. DFS (DFSAlgorithm.java)
+3. Best first with Heuristic (AstarAlgorithm.java)
+
+PuzzleState.java maintains state of puzzle state, It saves an ArrayList of parent nodes of current Puzzle states.
+It also does following functions:-
+1. Create children nodes from parent node
+2. Calculates different Heuristics functions like out of place, minimum moves and Manhattan dist + 3* totseq
+3. It also helps in priority queue by using comparator this helps in sorting of the Priority queue
+
+
+
